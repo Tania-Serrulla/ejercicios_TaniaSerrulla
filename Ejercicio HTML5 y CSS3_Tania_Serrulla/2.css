@@ -1,0 +1,50 @@
+body{background:url(ajolota.jpg)}
+h2{text-align:center;}
+
+#divon{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#divon>div{float:left;height:60px;}
+
+#largo{width:100%;background-color: green;}
+#semilargo{width:55%;background-color: green;}
+#red{background-color: red;}
+#red2{background-color: red;}
+#black{background-color: black;}
+#black2{background-color: black;}
+#olive{background-color: olive;}
+#olive2{background-color: olive;}
+#teal{background-color: teal;}
+#blue{background-color: blue;}
+#navy{background-color:navy;}
+#white{background-color:white;}
+#lime{background-color:lime;}
+#fuchsia{background-color: fuchsia;}
+#purple{background-color:purple;}
+#gray{background-color:gray;}
+#yellow{background-color:yellow;}
+
+.casilargo{width:15%;}
+
+#divin>div{float:left;height:60px;}
+
+.colores{width:12%;text-align:center;font-size:40px;}
+
+#redl{color: red;}
+#blackl{color: black;}
+#olivel{color: olive;}
+#teall{color: teal;}
+#bluel{color: blue;}
+#navyl{color:navy;}
+#whitel{color:white;}
+#limel{color:lime;}
+#fuchsial{color: fuchsia;}
+#purplel{color:purple;}
+#grayl{color:gray;}
+#yellowl{color:yellow;}
+#marronl{color:rgba(50, 5, 5, 0.945);}
+#aqual{color:aqua;}
+#silverl{color:silver;}
+#greenl{color:green;}

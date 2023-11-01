@@ -1,0 +1,7 @@
+div{float:left;width:50%;}
+
+#letras{list-style:lower-latin;}
+#cien{list-style:decimal-leading-zero;}
+#romanos{list-style:lower-roman;}
+#blanca{list-style:circle;}
+#cuadrada{list-style:square;}
