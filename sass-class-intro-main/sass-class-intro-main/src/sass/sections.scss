@@ -1,0 +1,18 @@
+@import 'variables';
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: $TextColorOne;
+    #section-two{
+        color: $TextColortwo;
+    }
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    text-align:center;
+    @include mixin;
+  }
