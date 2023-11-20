@@ -1,0 +1,152 @@
+<!--
+............(¯`'..
+..............(¯'.(¯'............._/)/)
+...............(¯'..(¯'........((.....((>>>>>>>>>>>>>>
+................(¯`'.(¯'....((.)..(. ' /)
+.................(¯`'..(¯'((.)....|\_/
+.....,,,~"¯¯¯`'¯(_¸´(_.)......|
+...(((./...........................)__
+..((((.\......),,...........(...../__`\
+..))))..\ . .//...¯¯¯¯¯¯¯' \.../... / /
+.(((...../ .// .............. | ./.....\/
+.))).....| ||.................| |...........???
+((........) \\.................) \...........\|/
+.^^^^.""'"'.^^^^^^^..""".^^^^.""""
+
+TANIA <3 <3 <3
+
+-->
+
+
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+
+html,body{
+margin:0px;
+padding:0px;
+width:100%;
+height:100%;
+cursor:none;
+background:url(granja.jpg);
+}
+
+div[id*="rod"]{
+/*z-index:100000;*/
+}
+
+#rodo{
+width:50px;
+height:50px;
+border-radius:50px;
+border:1px solid black;
+position:absolute;
+top:50px;
+left:50px;
+}
+
+#rodi{
+width:80px;
+height:80px;
+border-radius:80px;
+border:1px solid black;
+position:absolute;
+top:80px;
+left:80px;
+}
+
+#ys{
+height:100%;
+border-left:2px dotted black;
+width:2px;
+position:absolute;
+top:0px;
+left:0px;
+}
+
+#xs{
+width:100%;
+border-top:2px dotted black;
+height:2px;
+position:absolute;
+top:0px;
+left:0px;
+}
+
+input{
+width:6ch;
+}
+
+#nave{
+position:absolute;
+top:200px;
+left:200px;
+width:130px;
+height:130px;
+background:url(ovni.png);
+background-size:cover;
+border-radius:5px;
+/*animation:vola 11s 1s infinite alternate;*/
+transition:all 1s, background 0s;
+}
+
+</style>
+<script type="text/javascript">
+
+function targeta(event){
+Coy = event.clientY;
+Cox = event.clientX;
+
+document.getElementById("cys").value = Coy;
+document.getElementById("cxs").value = Cox;
+
+document.getElementById("ys").style.left = Cox + "px";
+document.getElementById("xs").style.top = Coy + "px";
+
+document.getElementById("rodo").style.left = Cox-25 + "px";
+document.getElementById("rodo").style.top = Coy-25 + "px";
+document.getElementById("rodi").style.left = Cox-40 + "px";
+document.getElementById("rodi").style.top = Coy-40 + "px";
+}
+
+diode = 0;
+function jarl(){
+if(diode==0){
+	document.getElementById('rodo').style.border = "1px dotted red";
+	document.getElementById('rodo').style.background = "white";
+	diode=1;
+	} else{
+	document.getElementById('rodo').style.border = "";
+	document.getElementById('rodo').style.background = "";
+	diode=0;
+	}
+}
+
+function machete(iden){
+iden.style.background="url(pum.png)";
+iden.style.backgroundSize="cover";
+
+setTimeout(function(){
+document.body.removeChild(iden);
+},800,iden);
+}
+
+function movime(){
+aleay = Math.floor((Math.random() * (600 - 0 + 1)) + 0);
+aleax = Math.floor((Math.random() * (1600 - 0 + 1)) + 0);
+document.getElementById("nave").style.top = aleay + "px";
+document.getElementById("nave").style.left = aleax + "px";
+}
+</script>
+</head>
+<body onMouseMove="targeta(event);" onMouseDown="jarl();" onMouseUp="jarl();" onload="setInterval('movime()',1000);">
+<input type="text" id="cys"></input>
+<input type="text" id="cxs"></input>
+<div id="rodo"></div>
+<div id="rodi"></div>
+<div id="ys"></div>
+<div id="xs"></div>
+<div id="nave" onclick="machete(this);"></div>
+</body>
+</html>
