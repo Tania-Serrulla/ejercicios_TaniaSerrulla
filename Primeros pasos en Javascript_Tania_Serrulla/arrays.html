@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania arrays</title>
+
+        <style type="text/css">
+
+        </style>
+</head>
+<body>
+<script type="text/javascript">
+
+const cadena=[];
+
+for (let i = 0; i < 11; i++) {
+  
+    cadena.push(i);
+    document.write('<p>' + (cadena[i]) + '</p><br><hr></hr>');
+
+}
+
+for(let i = 0; i < cadena.length; i++){
+
+    if(Math.floor(cadena[i]/2) === cadena[i]/2){
+    cadena.splice(i, 1);}
+
+    else {}
+    
+}
+console.log(cadena);
+document.write('<p>Cadena sin numeros pares ' + (cadena) + '</p><br><hr></hr>');
+
+let b = 0;
+for ( let a of cadena ) {if (b < a)b = a;}
+console.log(b);
+document.write('<p>Este es el numero mas grande (los numero pares no cuentan porque han sido eliminados de la cadena) ' + (b) + '</p><br><hr></hr>');
+
+var v = cadena[0]
+for (var i = 0; i < cadena.length ; i++) {if (cadena[i] < v) { v = cadena[i];}}
+console.log(v);
+document.write('<p>Este es el numero mas pequeño (los numero pares no cuentan porque han sido eliminados de la cadena) ' + (v) + '</p><br><hr></hr>');
+
+const gatos = "blanco, tricolor, negro";
+document.write('<p>'+(gatos.toUpperCase())+'</p><br><hr></hr>');
+console.log(gatos.toUpperCase());
+
+const peixos = "BETTA, PEZ ANGEL, GOLDFISH";
+document.write('<p>'+(peixos.toLowerCase())+'</p><br><hr></hr>');
+console.log(peixos.toLowerCase());
+
+const bichos =["mantis", "formiga", "papallona"];
+
+const bichota = (bichin) => bichin.charAt(0).toUpperCase().concat(bichin.substring(1, bichin.length));
+
+bichos.forEach(bichin => {
+  console.log(bichota(bichin));
+  document.write('<p>'+(bichota(bichin))+'</p><br><hr></hr>');
+});
+
+</script>
+</body>
+</html>

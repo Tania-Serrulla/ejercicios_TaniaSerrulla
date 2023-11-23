@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones Tania</title>
+
+        <style type="text/css">
+
+        </style>
+</head>
+<body>
+<script type="text/javascript">
+
+var nombre = prompt('pon tu nombre').toLowerCase();
+var numero1 = prompt('pon un numero').toLowerCase();
+var numero2 = prompt('pon otro numero mas').toLowerCase();
+var numerofinal = numero1 *1  + numero2 *1;
+
+funsion();
+function funsion(){
+
+    document.write('<div>Hola '+ nombre +'</div><br>');
+    document.write('<div>'+ numerofinal +'</div><br>');
+    console.log(nombre);
+    console.log(numerofinal);
+
+    if(Math.floor(numerofinal/2) === numerofinal/2){
+    document.write('<div> es par </div><br>');
+    console.log(nombre);} 
+    else {
+    document.write('<div>es inpar</div><br>');
+    console.log(nombre);}
+
+}
+
+</script>
+</body>
+</html>

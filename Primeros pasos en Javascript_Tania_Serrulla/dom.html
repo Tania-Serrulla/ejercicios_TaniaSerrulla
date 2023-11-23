@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tania's DOOM</title>
+<style type="text/css">
+body{background-color: orange;font-family: Arial}
+div{
+    background-color: blue;
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    color: white;
+    float: left;
+}
+#cajaroja{background-color: red;}
+#cajarosa{background-color: pink;}
+#cajaverde{background-color: green;}
+table, td, th{
+  border: 1px solid #000;
+}
+table{
+  border-collapse: collapse;
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+th, td{
+  padding: 10px 20px;
+}
+th{
+  background: #009ddc;
+  color: #fff;
+}
+tr:hover{
+  background: #e5e5e5;
+}
+</style>
+</head>
+<body>
+
+    <div onclick="funsion1();">ver mensage, hacer desaparecer caja roja, y cambiar contenido caja rosa</div>
+    <div id="cajaroja">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quisqu dspiciatis.</div>
+    <div id="cajarosa">777777777 77777777777 777777777777 7777777777</div>
+    <div onclick="funsion2();">ver bichos y numeros</div>
+    <div id="cajaverde"></div>
+
+<script type="text/javascript">
+
+function funsion1(){
+    alert('hola, esto es un mensage');
+    document.getElementById("cajaroja").style.opacity="0%";
+    document.getElementById("cajarosa").innerHTML = "0";
+}
+
+const bichus = ["papallona", "escarbat", "penerola", "formiga", "mantis", "abella", "mosquit", "espiadimonis", "mosca", "cuc"];
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+function funsion2(){
+    document.getElementById("cajarosa").innerHTML = bichus;
+    document.getElementById("cajaverde").innerHTML = numeros.length;
+}
+
+const cositas = [];
+document.write('<br>');
+document.write('<br>');
+document.write('<br>');
+document.write('<br>');
+document.write('<table>');
+for (let i = 0; i < 11; i++){
+cositas.push({"id": "id"+i, "name": "name"+i, "status": "status"+i,"species": "species"+i, "type": "type"+i, "gender": "gender"+i});
+document.write('<tr>');
+document.write('<td>'+ cositas[i].id +'</td><td>'+ cositas[i].name +'</td><td>'+ cositas[i].status +'</td><td>'+ cositas[i].species +'</td><td>'+ cositas[i].type +'</td><td>'+ cositas[i].gender+'</td>');
+document.write('</tr>');
+}
+document.write('</table>');
+
+</script>
+</body>
+</html>
