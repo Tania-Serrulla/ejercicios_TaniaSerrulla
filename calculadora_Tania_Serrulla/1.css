@@ -1,0 +1,40 @@
+section{
+	width:200px;
+	overflow:auto;
+	border:3px double black;
+	padding:4px;
+	margin:100px auto;
+}
+
+#pantalla{
+	background:silver;
+	width:93%;
+	padding:4px 2%;
+	border:1px dotted black;
+	margin:2px;
+	text-align:right;
+	font-size:22pt;
+}
+#memoria{
+	width:100%;
+	margin:2px;
+	opacity:0.3;
+}
+
+.boto{
+	float:left;
+	margin:2px;
+	width:46px;
+	padding:10px;
+	box-sizing:border-box;
+	border:1px solid black;
+	text-align:center;
+	cursor:pointer;
+	transition:all 200ms;
+}
+	
+.boto:hover{
+	background:black;
+	color:white;
+	font-weight:bold;
+}
